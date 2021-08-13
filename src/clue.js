@@ -157,8 +157,12 @@ function pickMystery() {
 
 
 // ITERATION 3
+// Declare a function named `revealMystery` that receives an _envelope_ `object` (with the shape of the object returned by `pickMystery`) as the single argument, and returns a reveal message in the following format:
 
-function revealMystery() {}
+// **\<FIRST NAME\> \<LAST NAME\> killed Mr. Boddy using the \<WEAPON\> in the \<ROOM\>!**
+function revealMystery(envelope) {
+return `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`
+}
 
 
 
