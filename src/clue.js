@@ -134,9 +134,13 @@ const weaponsArray = [
 ];
 
 
-// ITERATION 2
+// ITERATION 2S
 
-function selectRandom() {}
+function selectRandom(array) {
+return array[Math.floor(Math.random()*array.length)]
+//console.log(array[0])
+
+}
 
 function pickMystery() {}
 
